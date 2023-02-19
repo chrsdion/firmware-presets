@@ -8,8 +8,6 @@
 
 board_name MAMBAF405_2022A
 manufacturer_id DIAT
-mcu_id 004200474d33501320333733
-signature 
 
 # name: AOS3
 
@@ -47,14 +45,13 @@ set dyn_notch_q = 500
 set acc_calibration = -49,0,-6,1
 set min_check = 1010
 set max_check = 1990
-set serialrx_provider = CRSF
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT600
 set motor_poles = 12
 set small_angle = 180
 set report_cell_voltage = ON
 set osd_rssi_pos = 2458
-set osd_link_quality_pos = 508
+set osd_link_quality_pos = 412
 set osd_tim_2_pos = 407
 set osd_flymode_pos = 372
 set osd_throttle_pos = 352
@@ -64,6 +61,7 @@ set osd_mah_drawn_pos = 400
 set osd_craft_name_pos = 2059
 set osd_warnings_pos = 2281
 set osd_avg_cell_voltage_pos = 2432
+set osd_canvas_height = 13
 set vtx_band = 5
 set vtx_channel = 8
 set vtx_power = 4
@@ -78,25 +76,17 @@ profile 0
 # profile 0
 set feedforward_smooth_factor = 30
 set feedforward_jitter_factor = 9
-
-profile 1
-
-profile 2
-
-profile 3
-
-# restore original profile selection
-profile 0
+set dyn_idle_min_rpm = 30
 
 rateprofile 0
 
-rateprofile 1
-
-rateprofile 2
-
-rateprofile 3
-
-# restore original rateprofile selection
-rateprofile 0
-
-# save configuration
+# rateprofile 0
+set roll_rc_rate = 2
+set pitch_rc_rate = 2
+set yaw_rc_rate = 2
+set roll_expo = 70
+set pitch_expo = 70
+set yaw_expo = 70
+set roll_srate = 75
+set pitch_srate = 75
+set yaw_srate = 75
