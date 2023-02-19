@@ -6,18 +6,6 @@
 #$ AUTHOR: Recyclops
 #$ DESCRIPTION: Config for AOS3
 
-
-# version
-# Betaflight / STM32F405 (S405) 4.4.0 Dec 27 2022 / 12:08:07 (281bfb4bf) MSP API: 1.45
-
-# config: YES
-
-# start the command batch
-batch start
-
-# reset configuration to default settings
-defaults nosave
-
 board_name MAMBAF405_2022A
 manufacturer_id DIAT
 mcu_id 004200474d33501320333733
