@@ -6,18 +6,6 @@
 #$ AUTHOR: Recyclops
 #$ DESCRIPTION: Config for The Big 75
 
-
-# version
-# Betaflight / STM32F411 (S411) 4.4.0 Jan 29 2023 / 14:05:47 (4605309d8) MSP API: 1.45
-
-# config: YES
-
-# start the command batch
-batch start
-
-# reset configuration to default settings
-defaults nosave
-
 board_name BETAFPVF411
 manufacturer_id BEFH
 mcu_id 003100553535510536323431
